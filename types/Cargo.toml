@@ -1,5 +1,5 @@
 [package]
-name = "server"
+name = "types"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,12 +8,9 @@ edition = "2021"
 [dependencies]
 prost = "0.11.6"
 prost-types = "0.11.6"
-protobuf = "3.2.0"
-serde = "1.0.152"
-serde-protobuf = "0.8.2"
 thiserror = "1.0.38"
-tokio = "1.24.2"
-tonic = "0.8.3"
-tracing = "0.1.37"
-tracing-subscriber = "0.3.16"
-types = { path = "../types" }
+
+[build-dependencies]
+prost-build = "0.11.6"
+
+

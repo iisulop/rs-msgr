@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package msgr.types.message;
+
+message MessageContent {
+    string contents = 1;
+}
+
+message Message {
+    fixed64 recipient = 1;
+    fixed64 sender = 2;
+    MessageContent content = 3;
+}
